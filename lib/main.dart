@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/list_type.dart';
 
 void main() {
   runApp(MovieApp());
@@ -18,10 +19,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("TMDB API"),
-      ),
-      body: Container(),
+      body: CurvedBottomNavigationBarPage(),
     );
   }
 }
